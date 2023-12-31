@@ -14,9 +14,7 @@ function Login() {
       const response = await fetch("https://reqres.in/api/login");
       const res = await response.json();
       setData(res);
-      if (data) {
         navigate("/users");
-      }
     } catch (error) {
       setError(true);
     }
